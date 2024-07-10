@@ -47,10 +47,10 @@ const questions = [
     }
 ];
 
-function generateSVG({ text, textColor, shape, shapeColor }) {
+function generateSVG({ text, textColor, shape, shapeColor, outputPath = 'logo.svg' }) {
     let shapeElement;
     let textY = 105;
-    
+
     switch (shape) {
         case 'circle':
             shapeElement = `<circle cx="150" cy="100" r="80" fill="${shapeColor}" />`;
@@ -71,10 +71,15 @@ function generateSVG({ text, textColor, shape, shapeColor }) {
         </svg>
     `;
 
-    fs.writeFileSync('logo.svg', svgContent.trim());
+    fs.writeFileSync(outputPath, svgContent.trim());
     console.log('Generated logo.svg');
 }
 
-inquirer.prompt(questions).then(answers => {
-    generateSVG(answers);
-});
+module.exports = { generateSVG };
+
+if (process.env.NODE_ENV !== 'test') {
+    inquirer.prompt(questions).then(answers => {
+        generateSVG(answers);
+    });
+}
+
