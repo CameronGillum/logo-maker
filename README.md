@@ -1,6 +1,4 @@
-![circle-logo](https://github.com/CameronGillum/logo-maker/assets/170665036/cf37018e-52a3-4df0-93f4-9b2903c45bfc)# Logo-Maker
-
-
+# Logo-Maker
 
 ## Description
 Create simple logo svg files
