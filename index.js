@@ -59,19 +59,19 @@ function generateSVG({ text, textColor, shape, shapeColor }) {
         case 'square':
             shapeElement = `<rect x="70" y="20" width="160" height="160" fill="${shapeColor}" />`;
             break;
-    }}
+    }
 
-//     const svgContent = `
-//         <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-//             ${shapeElement}
-//             <text x="150" y="105" font-size="50" text-anchor="middle" fill="${textColor}" dominant-baseline="middle">${text}</text>
-//         </svg>
-//     `;
+    const svgContent = `
+        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            ${shapeElement}
+            <text x="150" y="105" font-size="50" text-anchor="middle" fill="${textColor}" dominant-baseline="middle">${text}</text>
+        </svg>
+    `;
 
-//     fs.writeFileSync('logo.svg', svgContent.trim());
-//     console.log('Generated logo.svg');
-// }
+    fs.writeFileSync('logo.svg', svgContent.trim());
+    console.log('Generated logo.svg');
+}
 
-// inquirer.prompt(questions).then(answers => {
-//     generateSVG(answers);
-// });
+inquirer.prompt(questions).then(answers => {
+    generateSVG(answers);
+});
