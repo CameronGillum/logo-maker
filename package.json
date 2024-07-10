@@ -1,0 +1,18 @@
+{
+  "name": "logo-maker",
+  "version": "1.0.0",
+  "description": "Create simple logo svg files",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
