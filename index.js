@@ -49,12 +49,15 @@ const questions = [
 
 function generateSVG({ text, textColor, shape, shapeColor }) {
     let shapeElement;
+    let textY = 105;
+    
     switch (shape) {
         case 'circle':
             shapeElement = `<circle cx="150" cy="100" r="80" fill="${shapeColor}" />`;
             break;
         case 'triangle':
             shapeElement = `<polygon points="150,30 230,170 70,170" fill="${shapeColor}" />`;
+            textY = 150;
             break;
         case 'square':
             shapeElement = `<rect x="70" y="20" width="160" height="160" fill="${shapeColor}" />`;
@@ -64,7 +67,7 @@ function generateSVG({ text, textColor, shape, shapeColor }) {
     const svgContent = `
         <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
             ${shapeElement}
-            <text x="150" y="105" font-size="50" text-anchor="middle" fill="${textColor}" dominant-baseline="middle">${text}</text>
+            <text x="150" y="${textY}" font-size="50" text-anchor="middle" fill="${textColor}" dominant-baseline="middle">${text}</text>
         </svg>
     `;
 
