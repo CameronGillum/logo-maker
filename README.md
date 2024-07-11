@@ -8,6 +8,8 @@ Create simple logo svg files
 ![triangle-logo](https://github.com/CameronGillum/logo-maker/assets/170665036/3ff0a607-917f-4ebb-ac39-a6f2e83d9f6f)
 ![square-logo](https://github.com/CameronGillum/logo-maker/assets/170665036/e30a9f15-164d-4cab-a9b5-5a627deeca62)
 
+## Walkthrough
+https://github.com/CameronGillum/logo-maker/assets/170665036/5c28426c-4cd1-4bf4-a366-4c2d41a8fe7b
 
 ## Table of Contents
 - [Installation](#installation)
