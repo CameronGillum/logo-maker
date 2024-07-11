@@ -9,7 +9,7 @@ Create simple logo svg files
 ![square-logo](https://github.com/CameronGillum/logo-maker/assets/170665036/e30a9f15-164d-4cab-a9b5-5a627deeca62)
 
 ## Walkthrough
-https://github.com/CameronGillum/logo-maker/assets/170665036/5c28426c-4cd1-4bf4-a366-4c2d41a8fe7b
+https://github.com/CameronGillum/logo-maker/assets/170665036/09f13eee-ee68-494b-ad8b-3807e3b9f232
 
 ## Table of Contents
 - [Installation](#installation)
